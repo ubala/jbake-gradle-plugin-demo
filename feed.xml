@@ -1,0 +1,180 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JBake</title>
+    <link>http://jbake.org</link>
+    <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <description>JBake Bootstrap Template</description>
+    <language>en-gb</language>
+    <pubDate>Sat, 12 Mar 2016 22:31:06 -0500</pubDate>
+    <lastBuildDate>Sat, 12 Mar 2016 22:31:06 -0500</lastBuildDate>
+
+    <item>
+      <title>Custom Theme</title>
+      <link>http://jbake.org/blog/2016/custom-theme.html</link>
+      <pubDate>Sat, 12 Mar 2016 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2016/custom-theme.html</guid>
+      <description>&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;implementing_custome_theme&amp;quot;&amp;gt;Implementing custome theme&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;The best part of using boostrap is to get apply custom themes. Number of custome themes available &amp;lt;a href=&amp;quot;http://bootswatch.com/&amp;quot;&amp;gt;like bootswatch&amp;lt;/a&amp;gt; on the web.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;setup_theme&amp;quot;&amp;gt;Setup Theme&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Copy the custom theme under css folder in assets. For example &amp;lt;code&amp;gt;united&amp;lt;/code&amp;gt; theme is used on this post.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
+&amp;lt;pre class=&amp;quot;prettyprint highlight&amp;quot;&amp;gt;&amp;lt;code&amp;gt;assets/css/themes/themename
+
+example:
+assets/css/themes/united&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;update_template&amp;quot;&amp;gt;Update Template&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Update the header template file as necessary.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
+&amp;lt;pre class=&amp;quot;prettyprint highlight&amp;quot;&amp;gt;&amp;lt;code&amp;gt;&amp;amp;lt;link th:with=&amp;quot;rootpath=(${content.rootpath != null} ? ${content.rootpath} : &amp;#39;&amp;#39;),thyme=(${content.thyme != null} ? ${rootpath}+&amp;#39;css/themes/&amp;#39;+${content.thyme} : ${rootpath}+&amp;#39;css&amp;#39;)&amp;quot; th:href=&amp;quot;${thyme}+&amp;#39;/bootstrap.min.css&amp;#39;&amp;quot; rel=&amp;quot;stylesheet&amp;quot;/&amp;amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;===Using custom theme&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Add custom header &amp;lt;code&amp;gt;:thyme: themename&amp;lt;/code&amp;gt; to post or page. Header for this post is given below.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
+&amp;lt;pre class=&amp;quot;prettyprint highlight&amp;quot;&amp;gt;&amp;lt;code&amp;gt;= Custom Theme
+Uma Bala
+2016-03-12
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog, bootstrap
+:idprefix:
+:thyme: united&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;bake_and_serve&amp;quot;&amp;gt;Bake and Serve&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;It&amp;amp;#8217;s all set and ready. Just bake and serve &amp;lt;code&amp;gt;jbake -b -s&amp;lt;/code&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;</description>	  
+    </item>
+
+    <item>
+      <title>Fourth Post</title>
+      <link>http://jbake.org/blog/2013/fourth-post.html</link>
+      <pubDate>Thu, 17 Oct 2013 00:00:00 -0400</pubDate>
+      <guid isPermaLink="false">blog/2013/fourth-post.html</guid>
+      <description>&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;ulist&amp;quot;&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://example.org&amp;quot; class=&amp;quot;bare&amp;quot;&amp;gt;http://example.org&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://example.org&amp;quot;&amp;gt;Example.org&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Nam id nisl quam. Donec a lorem sit amet libero pretium vulputate vel ut purus. Suspendisse leo arcu,
+mattis et imperdiet luctus, pulvinar vitae mi. Quisque fermentum sollicitudin feugiat. Mauris nec leo
+ligula. Vestibulum tristique odio ut risus ultricies a hendrerit quam iaculis. Duis tempor elit sit amet
+ligula vehicula et iaculis sem placerat. Fusce dictum, metus at volutpat lacinia, elit massa auctor risus,
+id auctor arcu enim eu augue. Donec ultrices turpis in mi imperdiet ac venenatis sapien sodales. In
+consequat imperdiet nunc quis bibendum. Nulla semper, erat quis ornare tristique, lectus massa posuere
+libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;</description>	  
+    </item>
+
+    <item>
+      <title>Third Post</title>
+      <link>http://jbake.org/blog/2013/third-post.html</link>
+      <pubDate>Thu, 26 Sep 2013 00:00:00 -0400</pubDate>
+      <guid isPermaLink="false">blog/2013/third-post.html</guid>
+      <description>&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;ulist&amp;quot;&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://example.org&amp;quot; class=&amp;quot;bare&amp;quot;&amp;gt;http://example.org&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://example.org&amp;quot;&amp;gt;Example.org&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Nam id nisl quam. Donec a lorem sit amet libero pretium vulputate vel ut purus. Suspendisse leo arcu,
+mattis et imperdiet luctus, pulvinar vitae mi. Quisque fermentum sollicitudin feugiat. Mauris nec leo
+ligula. Vestibulum tristique odio ut risus ultricies a hendrerit quam iaculis. Duis tempor elit sit amet
+ligula vehicula et iaculis sem placerat. Fusce dictum, metus at volutpat lacinia, elit massa auctor risus,
+id auctor arcu enim eu augue. Donec ultrices turpis in mi imperdiet ac venenatis sapien sodales. In
+consequat imperdiet nunc quis bibendum. Nulla semper, erat quis ornare tristique, lectus massa posuere
+libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;</description>	  
+    </item>
+
+    <item>
+      <title>Second Post</title>
+      <link>http://jbake.org/blog/2013/second-post.html</link>
+      <pubDate>Sun, 25 Aug 2013 00:00:00 -0400</pubDate>
+      <guid isPermaLink="false">blog/2013/second-post.html</guid>
+      <description>&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;http://example.org&amp;quot;&amp;gt;http://example.org&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;http://example.org&amp;quot;&amp;gt;Example.org&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;Nam id nisl quam. Donec a lorem sit amet libero pretium vulputate vel ut purus. Suspendisse leo arcu,&amp;lt;br/&amp;gt;mattis et imperdiet luctus, pulvinar vitae mi. Quisque fermentum sollicitudin feugiat. Mauris nec leo&amp;lt;br/&amp;gt;ligula. Vestibulum tristique odio ut risus ultricies a hendrerit quam iaculis. Duis tempor elit sit amet&amp;lt;br/&amp;gt;ligula vehicula et iaculis sem placerat. Fusce dictum, metus at volutpat lacinia, elit massa auctor risus,&amp;lt;br/&amp;gt;id auctor arcu enim eu augue. Donec ultrices turpis in mi imperdiet ac venenatis sapien sodales. In&amp;lt;br/&amp;gt;consequat imperdiet nunc quis bibendum. Nulla semper, erat quis ornare tristique, lectus massa posuere&amp;lt;br/&amp;gt;libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.&amp;lt;/p&amp;gt;</description>	  
+    </item>
+
+    <item>
+      <title>First Post</title>
+      <link>http://jbake.org/blog/2013/first-post.html</link>
+      <pubDate>Wed, 24 Jul 2013 00:00:00 -0400</pubDate>
+      <guid isPermaLink="false">blog/2013/first-post.html</guid>
+      <description>
+&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.&amp;lt;/p&amp;gt;
+
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;http://example.org&amp;quot;&amp;gt;http://example.org&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;http://example.org&amp;quot;&amp;gt;Example.org&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;p&amp;gt;Nam id nisl quam. Donec a lorem sit amet libero pretium vulputate vel ut purus. Suspendisse leo arcu, 
+mattis et imperdiet luctus, pulvinar vitae mi. Quisque fermentum sollicitudin feugiat. Mauris nec leo 
+ligula. Vestibulum tristique odio ut risus ultricies a hendrerit quam iaculis. Duis tempor elit sit amet 
+ligula vehicula et iaculis sem placerat. Fusce dictum, metus at volutpat lacinia, elit massa auctor risus, 
+id auctor arcu enim eu augue. Donec ultrices turpis in mi imperdiet ac venenatis sapien sodales.&amp;lt;/p&amp;gt; 
+
+&amp;lt;pre class=&amp;quot;prettyprint&amp;quot;&amp;gt;
+&amp;lt;code&amp;gt;
+package org.jbake;
+
+public class Oven {
+	public static void main(String[] args) {
+		System.out.print(&amp;quot;Baking!&amp;quot;);
+  }
+}
+&amp;lt;/code&amp;gt;
+&amp;lt;/pre&amp;gt;
+
+&amp;lt;p&amp;gt;In consequat imperdiet nunc quis bibendum. Nulla semper, erat quis ornare tristique, lectus massa posuere 
+libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.&amp;lt;/p&amp;gt;
+</description>	  
+    </item>
+
+  </channel> 
+</rss>
